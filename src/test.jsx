@@ -8,62 +8,6 @@ const Test = () => {
     setList([...list, ref.current.value]);
     ref.current.value = [];
   };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//   const [setter, setsetter] = useState([]);
-//   const reff = useRef(null);
-//   const newhand = ()=>{
-//     setsetter([...setter,reff.current.value])
-//     reff.current.value = []
-//   }
-//    return(
-//     <>
-//     <input type="text" ref={reff} />
-//     <button onClick={newhand}>BUTTOn</button>
-//     {setter?.map((set)=>{
-//         return(
-//             <>
-//             <div key={set}
-//             className="h-30 border border-red-500 w-30">
-//             {setter}
-
-//             </div>
-//             </>
-//         )
-//     })}
-//     </>
-//    )
-
   const handleDelete = (listItem) => {
     setList(
       list?.filter((e) => {
